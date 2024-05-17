@@ -2,9 +2,9 @@ import { Flysh, IOMessageMapper, InputMessage, PageRecords } from "flysh";
 
  let IM = new InputMessage('.','/test.html');
  IM.addFilterSelector("table tr td")
-     .addField('prod','td','')
-     .addField('brol1','td','')
-     .addField('brol2','td','');
+     .addField('field_1','td','')
+     .addField('field_2','td','')
+     .addField('field_3','td','');
 
 console.log(IOMessageMapper.toJSON(IM));
 
